@@ -44,7 +44,10 @@ def getwinner(lotto):
         else:
             print('꽝')
 
-
-lotto = buyautolotto()#로또 번호 표 구하기
+lotto=buyautolotto()
 printlotto(lotto)
-
+setwinlotto()#당첨번호 설정
+print('당첨 번호: ',end = ' ')
+printnums(winnum)#당첨번호 출력
+print()
+getwinner(lotto)
